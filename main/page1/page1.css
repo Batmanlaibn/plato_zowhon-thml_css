@@ -1,4 +1,6 @@
 body{
+    height: 100%;
+    width: 100%;
     background-color: #1a1a1af5;
     margin: 0;
     padding: 0;
@@ -9,23 +11,38 @@ iframe {
     border: none;
     display: block;
 }
-
-
-.main{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    display:inline-block;
-    margin-left: 600px;
-}
-.buttons{
+.main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 9px; 
+}
+
+.buttons {
+    width: 100%;
+    max-width: 743px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    border: 1px solid #ffffff;
-    width: 743px;
-    height: 39px;
-    top: 965px;
+    margin-top: 15px;
+}
+
+.left_button, .center_button, .right_button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.center_button {
+    justify-content: center;
+}
+
+.icon1, .icon2, .Previos_Page, .Continue {
+    cursor: pointer;
+}
+.Previos_Page{
+    width: 130px;
+    height: 33px;
 }
 .icon1{
     width: 22px;
@@ -55,22 +72,22 @@ iframe {
     top: 9px;
     left: 4px;
 }
-.gol_img{
+.gol_img {
     width: 613px;
     height: 935px;
-    top: 9px;
-    left: 654px;
+    display: block;
+    margin: 0 auto; /* towd bailgan */
 }
 
 .Continue{
     text-align: center;
     width: 130px;
-    height: 30px;
+    height: 33px;
     top: 3px;
     gap: 50px;
     background-color: #F6CA17;
     color: #000000;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     border: none;
     border-bottom: 4px solid #000000;
 }

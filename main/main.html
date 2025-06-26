@@ -8,17 +8,49 @@
     <title>Main</title>
 </head>
 <body>
-    <iframe src="./page1/page1.html" frameborder="0"></iframe>
-    <iframe src="./page2/page2.html" frameborder="0"></iframe>
-    <iframe src="./page3/page3.html" frameborder="0"></iframe>
-    <iframe src="./page4/page4.html" frameborder="0" width="100%" height="800px" style="border: none;" allowfullscreen></iframe>
+    <iframe src="./page1/page1.html" frameborder="0" height="1300px" width="100%" style="border: none;" allowfullscreen></iframe>
+    <iframe src="./page2/page2.html" frameborder="0" height="1500px" width="100%" style="border: none;" allowfullscreen></iframe>
+    <iframe src="./page3/page3.html" frameborder="0" height="1300px" width="100%" style="border: none;" allowfullscreen></iframe>
+    <iframe src="./page4/page4.html" frameborder="0" height="1300px" width="100%" style="border: none;" allowfullscreen></iframe>
     
     <div class="baingiin_footer_buhelden">
         <div class="baingiin_footer">
-            <button class="icon1"><img class="icon1_iin_icon" src="./img/image copy.png" alt=""></button>
-            <button class="Watch_Course_button"><span class="Watch_Course_button_iin_text">Watch Course</span></button>
-            <button class="save_button"><img class="save_button_icon" src="./img/image.png" alt=""></button>
+
+            <button class="icon1" onclick="toggleFooterUI()">
+                <img class="icon1_iin_icon" src="./img/image copy.png" alt="">
+            </button>
+
+            
+            <div class="footer_buttons_icons" id="footerTabs" style="display: none;">
+                <button class="Course_button">
+                    <span class="Course_button_iin_text">Course</span>
+                </button>
+
+                <button class="Trailer_button">
+                    <span class="Trailer_button_iin_text">Trailer</span>
+                </button>
+
+                <button class="Details_button">
+                    <span class="Details_button_iin_text">Details</span>
+                </button>
+
+                <button class="Teacher_button">
+                    <span class="Teacher_button_iin_text">Teacher</span>
+                </button>
+            </div>
+
+            <button class="Watch_Course_button" id="watchCourseBtn" onclick="toggleFooterUI()" style="display: none;">
+                <span class="Watch_Course_button_iin_text">Watch Course</span>
+            </button>
+            
+            <button class="save_button">
+                <img class="save_button_icon" src="./img/image.png" alt="">
+            </button>
         </div>
     </div>
+
+    
+
+    <script src="main.js"></script>
 </body>
 </html>

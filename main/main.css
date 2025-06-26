@@ -3,18 +3,38 @@ body {
     padding: 0;
 }
 
-iframe {
+/* iframe {
     width: 100%;
     height: 954px; 
     border: none;
     display: block;
-}
-.baingiin_footer_buhelden{
+} */
+.baingiin_footer_buhelden {
+    position: fixed; /* delegtsendeer baingiin bailgan footer-d deer baingii bairshulna */
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000; /* iframe-uudees deesh bairluulna */
+    background-color: transparent; 
 }
 .baingiin_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border-radius: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: auto;            
+    height: 72px;
+    background-color: #5c5c5c;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+/* .baingiin_footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +45,7 @@ iframe {
     background-color: #5c5c5c;
     margin-bottom: 6px;
     margin-top: 6px;
-}
+} */
 .icon1{
     width: 60px;
     height: 60px;
@@ -39,6 +59,159 @@ iframe {
     width: 31px;
     height: 31px;
 }
+
+
+#watchCourseBtn, #footerTabs {
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.footer_buttons_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius:7px;
+    width: 278px;
+    height: 60px;
+    background-color: #F8F8F8;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.Course_button{
+    width: 61px;
+    height: 48px;
+    border: none;
+    gap: 10px;
+    color: #242222;
+    background-color: #F8F8F8;
+}
+.Course_button_iin_text{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.Trailer_button{
+    width: 61px;
+    height: 48px;
+    border: none;
+    gap: 10px;
+    color: #242222;
+    background-color: #F8F8F8;
+}
+.Trailer_button_iin_text{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.Details_button{
+    width: 63px;
+    height: 48px;
+    border: none;
+    gap: 10px;
+    color: #242222;
+    background-color: #F8F8F8;
+}
+.Details_button_iin_text{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.Teacher_button{
+    width: 71px;
+    height: 48px;
+    border: none;
+    gap: 10px;
+    color: #242222;
+    background-color: #F8F8F8;
+}
+.Teacher_button_iin_text{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+
+.Course_button:hover{
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+.Course_button:active{
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+}
+
+.Trailer_button:hover{
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+.Trailer_button:active{
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+}
+
+.Details_button:hover{
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+.Details_button:active{
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+}
+
+.Teacher_button:hover{
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+.Teacher_button:active{
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .Watch_Course_button{
     width: 124px;
     height: 60px;
@@ -58,7 +231,7 @@ iframe {
     width: 90px;
     height: 18px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 100%;
     letter-spacing: 0%;
 }

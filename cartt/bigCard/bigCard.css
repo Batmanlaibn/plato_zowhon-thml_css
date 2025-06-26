@@ -1,15 +1,46 @@
-.main {
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 2px;
-    align-items: center;
+    justify-content: center;
 }
-.main iframe {
-    width: none;
-    height: 130px;
+.main {
+    width: 100%;
+    height: 809px;
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+.img {
+    gap: 20px;
+    width: 660px;
+    height: 476px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+iframe {
+    margin-top: -28px;
+    margin-left: -15px;
+    width: 100%;
+    max-width: 660px;
+    height: 500px;
     border: none;
 }
-.img{
+
+.card {
+    border-radius: 7px;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 660px;
     width: 758px;
-    height: 426px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
