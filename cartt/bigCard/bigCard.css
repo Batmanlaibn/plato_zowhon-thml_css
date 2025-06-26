@@ -1,0 +1,15 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+.main iframe {
+    width: none;
+    height: 130px;
+    border: none;
+}
+.img{
+    width: 758px;
+    height: 426px;
+}

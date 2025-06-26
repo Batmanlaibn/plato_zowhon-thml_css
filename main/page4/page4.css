@@ -1,0 +1,28 @@
+.page4_main{
+    height: 1000px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+.shar_tseg{
+    color: yellow;
+    border-radius: 20%;
+    font-size: 150px;
+}
+.plus{
+    display: inline;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 8000px; 
+    border: none;
+    display: block;
+}

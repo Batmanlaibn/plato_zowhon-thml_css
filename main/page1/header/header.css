@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; /* Бусад хэсэг цагаан байх */
+  font-family: 'Delius', cursive;
+}
+
+.site-header {
+  width: auto;
+  height: 49px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-right: 195px;
+  padding-bottom: 8px;
+  padding-left: 195px;
+  background-color: #1A1A1A;
+}
+
+.logo {
+  width: 75px;
+  height: 30px;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 30px;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #1A1A1A;
+}
+
+.sign-in:hover {
+  background-color: #F6CA17;
+}
+
+.sign-in:active {
+  filter: hue-rotate(0deg) saturate(700%) brightness(90%);
+}

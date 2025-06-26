@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 954px; 
+    border: none;
+    display: block;
+}
+.baingiin_footer_buhelden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.baingiin_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    border-radius: 12px;
+    width: 305px;
+    height: 72px;
+    background-color: #5c5c5c;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.icon1{
+    width: 60px;
+    height: 60px;
+    border-radius: 7px;
+    padding: 14px;
+    gap: 10px;
+    background-color: #222222;
+    border: none;
+}
+.icon1_iin_icon{
+    width: 31px;
+    height: 31px;
+}
+.Watch_Course_button{
+    width: 124px;
+    height: 60px;
+    border-radius: 7px;
+    border: 1px solid #000000;
+    padding-top: 21px;
+    padding-right: 17px;
+    padding-bottom: 21px;
+    padding-left: 17px;
+    gap: 10px;
+    color: #242222;
+    background-color: #F6CA17;
+}
+.Watch_Course_button_iin_text{
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.save_button{
+    width: 93px;
+    height: 60px;
+    border-radius: 7px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 36px;
+    gap: 10px;
+    border: none;
+    background-color: #222222;
+}
+.save_button_icon{
+    width: 23.1px;
+    height: 23.05px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

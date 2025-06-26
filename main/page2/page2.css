@@ -1,0 +1,58 @@
+.main{
+    margin-left: 50px;
+}
+.titel{
+    width: 1517px;
+    height: 229px;
+}
+.titel_tom{
+    width: 1511px;
+    height: 96px;
+    top: 100px;
+    left: 207.5px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.titel_jijig{
+    width: 748px;
+    height: 112px;
+    top: 217px;
+    left: 201.5px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 557px;
+    height: 59px;
+    font-size: 17px;
+}
+.footer_text{
+    border: 1px solid black;
+    display: inline;
+    width: 353px;
+    height: 26px;
+    top: 937px;
+    left: 513.5px;
+    font-weight: 300;
+    line-height: 26px;
+    letter-spacing: -1%;
+}
+.footer_link{
+    width: 203px;
+    height: 26px;
+    top: 7px;
+    left: 2px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -1%;
+    color: #000000;
+    border: 1px solid black;
+}
