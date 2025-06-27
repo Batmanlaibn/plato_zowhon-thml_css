@@ -1,15 +1,5 @@
-.main{
-    border: 1px solid black;
-
-}
 body {
     margin: 0;
     padding: 0;
-}
-
-iframe {
-    width: 1000px;
-    height: 652px;
-    border: none;
-    display: block;
+    background-color: #f8f8f8;
 }

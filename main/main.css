@@ -19,6 +19,7 @@ body {
     align-items: center;
     z-index: 1000; /* iframe-uudees deesh bairluulna */
     background-color: transparent; 
+    background: none;
 }
 .baingiin_footer{
     display: flex;
