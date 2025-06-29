@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="page1">
+            <div class="site_header">
+                <img src="./img/logo.png" class="logo" alt="Logo">
+                <a class="sign_in" href="/sign in/sign_In.html">
+                    <span class="sign_in_span">Sign In</span>
+                </a>
+            </div>
+            <div class="page1_main">
+                <div>
+                    <div class="page1_content_wrapper">
+                        <div id="image_container" class="page1_image_wrapper">
+                            <img id="background-image" class="page1_background_img" src="./img/home.png" alt="">
+                        </div>
+
+                        <div class="page1_quiz_main" id="quiz_wrapper" style="display: none;">
+                            <div class="page1_quiz">
+                                <div id="quiz_box">
+                                <!-- asuult end garna -->
+                                </div>
+                                <div class="choices">
+                                    <div id="score_box">
+                                        Оноо: <span id="score">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page1_buttons">
+                        <div class="page1_left_button">
+                            <button class="page1_Previos_Page" onclick="showPrevImage()">Previos Page</button>
+                        </div>
+                        <div class="page1_center_button">
+                            <button class="page1_icon1"><img class="page1_icon1_img" src="./img/gurwaljin.png" alt=""></button>
+                            <button class="page1_icon2"><img class="page1_icon2_img" src="./img/dugui.png" alt=""></button>
+                        </div>
+                        <div class="page1_right_button">
+                            <button id="continueBtn" class="page1_Continue" onclick="showNextImage()">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page2">
+            <div class="page2_main">  
+                <div class="page2_titel">
+                    <P class="page2_titel_tom">
+                        LEARN FROM THE BEST<span class="page2_shar_tseg">.</span>
+                    </P>
+                    <p class="page2_titel_jijig">
+                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam 
+                        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat 
+                        volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation 
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+                <div class="page2_card">
+                    <div class="page2_card_main">
+                        <div class="page2_big_card">
+                            <img src="./img/image1.png" class="page2_big_card_img" alt="">
+                            <div class="page2_big_card_main">
+                                <div>
+                                    <div class="page2_big_card_big_header">
+                                        <p>Design Systems for Websites Using Figma</p>
+                                    </div>
+                                    <div class="page2_big_card_small_header">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud 
+                                            exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <!-- ene dotor box bairlana -->
+                                    </div>
+                                </div>
+                                <hr class="page2_big_card_hr1">
+
+                                <div class="page2_big_card_main_dood">
+                                    <div class="page2_big_card_by_IDERBAT">
+                                        <p class="page2_big_card_ehnii_p">by <span class="page2_big_card_ehnii_p_span">IDERBAT</span></p>
+                                        <p class="page2_big_card_dood_p"><span class="page2_big_card_dood_p_span">1999</span> <span class="page2_big_card_USD">USD</span></p>
+                                    </div>
+                                </div>
+                                <hr class="page2_big_card_hr2">
+
+                                <div class="page2_big_card_footer">
+                                    <div class="page2_big_card_footer_main">
+                                        <div class="page2_Score" data-score="3.7">
+                                            <p><strong>Score</strong> <span class="page2_value">3.7</span>/5</p>
+                                            <div class="page2_score_bar">
+                                                <div class="page2_score_fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="page2_big_card_Buy">
+                                            <button>
+                                                <span class="page2_big_card_Buy_text">Buy</span>
+                                                <img class="page2_big_card_buy_img" src="./img/Buy_icon.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page2_big_card">
+                            <img src="./img/image2.png" class="page2_big_card_img" alt="">
+                            <!-- page2_big_card_ -->
+                            <div class="page2_big_card_main">
+                                <div class="page2_big_card_header">
+                                    <div class="page2_big_card_big_header">
+                                        <p>Design Systems for Websites Using Figma</p>
+                                    </div>
+                                    <div class="page2_big_card_small_header">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                                            tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud 
+                                            exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <!-- ene dotor box bairlana -->
+                                    </div>
+                                </div>
+                                <hr class="page2_big_card_hr1">
+
+                                <div class="page2_big_card_main_dood">
+                                    <div class="page2_big_card_by_IDERBAT">
+                                        <p class="page2_big_card_ehnii_p">by <span class="page2_big_card_ehnii_p_span">IDERBAT</span></p>
+                                        <p class="page2_big_card_dood_p"><span class="page2_big_card_dood_p_span">1999</span> <span class="page2_big_card_USD">USD</span></p>
+                                    </div>
+                                </div>
+                                <hr class="page2_big_card_hr2">
+
+                                <div class="page2_big_card_footer">
+                                    <div class="page2_big_card_footer_main">
+                                        <div class="page2_Score" data-score="3.7">
+                                            <p><strong>Score</strong> <span class="page2_value">3.7</span>/5</p>
+                                            <div class="page2_score_bar">
+                                                <div class="page2_score_fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="page2_big_card_Buy">
+                                            <button>
+                                                <span class="page2_big_card_Buy_text">Buy</span>
+                                                <img class="page2_big_card_buy_img" src="./img/Buy_icon.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page2_footer_wrapper">
+                    <div class="page2_footer">
+                        <p class="page2_footer_text">Currently we have more courses for you</p>
+                        <a href="#" class="page2_footer_link">View All Master Classes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page3">
+            <div class="page3_big_main">
+                <div>
+                    <div class="page3_main">
+                        <div id="page3_card" class="page3_card">
+                            <img src="./img/image1.png" class="page3_main_img" alt="">
+                            <div>
+                                <div class="page3_header">
+                                    <p>Design Systems for Websites <br> Using Figma</p>
+                                </div>
+
+                                <hr class="page3_hr1">
+
+                                <div class="page3_main_dood">
+                                    <div class="page3_by_IDERBAT">
+                                        <p class="page3_ehnii_p">by <span class="page3_ehnii_p_span">IDERBAT</span></p>
+                                        <p class="page3_dood_p"><span class="page3_dood_p_span">1999</span> <span class="page3_USD">USD</span></p>
+                                    </div>
+                                </div>
+                                <hr class="page3_hr2">
+
+                                <div class="page3_footer">
+                                    <div class="page3_footer_main">
+                                        <div class="page3_Score" data-score="3.7">
+                                            <p><strong>Score</strong> <span class="page3_score_value">3.7</span>/5</p>
+                                            <!-- page3_score_value BAIHGUI BAINA -->
+                                            <div class="page3_score_bar">
+                                                <div class="page3_score_fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="page3_Buy">
+                                            <button>
+                                                <span class="page3_Buy_text">Buy</span>
+                                                <img class="page3_Buy_img" src="./img/Buy_icon.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- 
+                            <div id="page3_card"></div>  
+                            document.getElementById("renderHere").innerHTML = document.getElementById("page3_card
+                            ene code iig ashiglaad id tai div eer page3_card iig hanch duudaj ajluulj bas bolno
+                        -->
+
+
+
+                        <div class="page3_card">
+                            <img src="./img/image2.png" class="page3_main_img" alt="">
+                            <div>
+                                <div class="page3_header">
+                                    <p>Design Systems for Websites <br> Using Figma</p>
+                                </div>
+
+                                <hr class="page3_hr1">
+
+                                <div class="page3_main_dood">
+                                    <div class="page3_by_IDERBAT">
+                                        <p class="page3_ehnii_p">by <span class="page3_ehnii_p_span">IDERBAT</span></p>
+                                        <p class="page3_dood_p"><span class="page3_dood_p_span">1999</span> <span class="page3_USD">USD</span></p>
+                                    </div>
+                                </div>
+                                <hr class="page3_hr2">
+
+                                <div class="page3_footer">
+                                    <div class="page3_footer_main">
+                                        <div class="page3_Score" data-score="3.7">
+                                            <p><strong>Score</strong> <span class="page3_score_value">3.7</span>/5</p>
+                                            <div class="page3_score_bar">
+                                                <div class="page3_score_fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="page3_Buy">
+                                            <button>
+                                                <span class="page3_Buy_text">Buy</span>
+                                                <img class="page3_Buy_img" src="./img/Buy_icon.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page3_card">
+                            <img src="./img/image3.png" class="page3_main_img" alt="">
+                            <div>
+                                <div class="page3_header">
+                                    <p>Design Systems for Websites <br> Using Figma</p>
+                                </div>
+
+                                <hr class="page3_hr1">
+
+                                <div class="page3_main_dood">
+                                    <div class="page3_by_IDERBAT">
+                                        <p class="page3_ehnii_p">by <span class="page3_ehnii_p_span">IDERBAT</span></p>
+                                        <p class="page3_dood_p"><span class="page3_dood_p_span">1999</span> <span class="page3_USD">USD</span></p>
+                                    </div>
+                                </div>
+                                <hr class="page3_hr2">
+
+                                <div class="page3_footer">
+                                    <div class="page3_footer_main">
+                                        <div class="page3_Score" data-score="3.7">
+                                            <p><strong>Score</strong> <span class="page3_score_value">3.7</span>/5</p>
+                                            <div class="page3_score_bar">
+                                                <div class="page3_score_fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="page3_Buy">
+                                            <button>
+                                                <span class="page3_Buy_text">Buy</span>
+                                                <img class="page3_Buy_img" src="./img/Buy_icon.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page3_main2">
+                        <div class="page3_card">
+                            <img src="./img/image4.png" class="page3_main_img" alt="">
+                            <div>
+                                <div class="page3_header">
+                                    <p>Design Systems for Websites <br> Using Figma</p>
+                                </div>
+
+                                <hr class="page3_hr1">
+
+                                <div class="page3_main_dood">
+                                    <div class="page3_by_IDERBAT">
+                                        <p class="page3_ehnii_p">by <span class="page3_ehnii_p_span">IDERBAT</span></p>
+                                        <p class="page3_dood_p"><span class="page3_dood_p_span">1999</span> <span class="page3_USD">USD</span></p>
+                                    </div>
+                                </div>
+                                <hr class="page3_hr2">
+
+                                <div class="page3_footer">
+                                    <div class="page3_footer_main">
+                                        <div class="page3_Score" data-score="3.7">
+                                            <p><strong>Score</strong> <span class="page3_score_value">3.7</span>/5</p>
+                                            <div class="page3_score_bar">
+                                                <div class="page3_score_fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="page3_Buy">
+                                            <button>
+                                                <span class="page3_Buy_text">Buy</span>
+                                                <img class="page3_Buy_img" src="./img/Buy_icon.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page3_card">
+                            <img src="./img/image5.png" class="page3_main_img" alt="">
+                            <div>
+                                <div class="page3_header">
+                                    <p>Design Systems for Websites <br> Using Figma</p>
+                                </div>
+
+                                <hr class="page3_hr1">
+
+                                <div class="page3_main_dood">
+                                    <div class="page3_by_IDERBAT">
+                                        <p class="page3_ehnii_p">by <span class="page3_ehnii_p_span">IDERBAT</span></p>
+                                        <p class="page3_dood_p"><span class="page3_dood_p_span">1999</span> <span class="page3_USD">USD</span></p>
+                                    </div>
+                                </div>
+                                <hr class="page3_hr2">
+
+                                <div class="page3_footer">
+                                    <div class="page3_footer_main">
+                                        <div class="page3_Score" data-score="3.7">
+                                            <p><strong>Score</strong> <span class="page3_score_value">3.7</span>/5</p>
+                                            <div class="page3_score_bar">
+                                                <div class="page3_score_fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="page3_Buy">
+                                            <button>
+                                                <span class="page3_Buy_text">Buy</span>
+                                                <img class="page3_Buy_img" src="./img/Buy_icon.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page3_card">
+                            <img src="./img/image6.png" class="page3_main_img" alt="">
+                            <div>
+                                <div class="page3_header">
+                                    <p>Design Systems for Websites <br> Using Figma</p>
+                                </div>
+
+                                <hr class="page3_hr1">
+
+                                <div class="page3_main_dood">
+                                    <div class="page3_by_IDERBAT">
+                                        <p class="page3_ehnii_p">by <span class="page3_ehnii_p_span">IDERBAT</span></p>
+                                        <p class="page3_dood_p"><span class="page3_dood_p_span">1999</span> <span class="page3_USD">USD</span></p>
+                                    </div>
+                                </div>
+                                <hr class="page3_hr2">
+
+                                <div class="page3_footer">
+                                    <div class="page3_footer_main">
+                                        <div class="page3_Score" data-score="3.7">
+                                            <p><strong>Score</strong> <span class="page3_score_value">3.7</span>/5</p>
+                                            <div class="page3_score_bar">
+                                                <div class="page3_score_fill"></div>
+                                            </div>
+                                        </div>
+                                        <div class="page3_Buy">
+                                            <button>
+                                                <span class="page3_Buy_text">Buy</span>
+                                                <img class="page3_Buy_img" src="./img/Buy_icon.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page4">
+            <div class="page4_main">
+                <div>
+                    <div>
+                        <p class="page4_header">FAQ<span class="page4_shar_tseg">.</span></p>
+                    </div>
+                    <div class="page4_main_plus">
+                        <div class="page4_Plato_plus">
+                            <p class="page4_Plato">Plato?</p>
+                            <button class="page4_plus"><img class="plus_img" src="./img/plus.png" alt=""></button>
+                        </div>
+                        <div class="page4_Plato_plus">
+                            <p class="page4_Plato">Plato?</p>
+                            <button class="page4_plus"><img class="plus_img" src="./img/plus.png" alt=""></button>
+                        </div>
+                        <div class="page4_Plato_plus">
+                            <p class="page4_Plato">Plato?</p>
+                            <button class="page4_plus"><img class="plus_img" src="./img/plus.png" alt=""></button>
+                        </div>
+                        <div class="page4_Plato_plus">
+                            <p class="page4_Plato">Plato?</p>
+                            <button class="page4_plus"><img class="plus_img" src="./img/plus.png" alt=""></button>
+                        </div>
+                        <div class="page4_Plato_plus">
+                            <p class="page4_Plato">Plato?</p>
+                            <button class="page4_plus"><img class="plus_img" src="./img/plus.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page5">
+            <div class="page5_footer">
+                <div class="page5_logo">
+                    <img src="./img/footer_icon.png" alt="Plato Logo">
+                    <p class="page5_tagline">Learn. Apply. Succeed.</p>
+                </div>
+                <div class="page5_songolt">
+                    <!-- page5_songolt BAIHGUI BAINA -->
+                    <div class="page5_nav_links">
+                        <a href="#">Courses</a>
+                        <a href="#">Community</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                    <div class="page5_social_links">
+                        <a href="#"><img class="facebook_icon" src="./img/facebook_icon.png" alt=""></a>
+                        <a href="#"><img class="instagram_icon" src="./img/instagram_icon.png" alt=""></a>
+                        <a href="#"><img class="linkedin_icon" src="./img/linkedIn_icon.png" alt=""></a>
+                        <a href="#"><img class="twitter_icon" src="./img/twitter_icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="baingiin_footer_buhelden">
+            <div class="baingiin_footer">
+
+                <button class="icon1" onclick="toggleFooterUI(event)">
+                    <img class="icon1_iin_icon" src="./img/garaa_tulsan_icon.png" alt="">
+                </button>
+
+                
+                <div class="footer_buttons_icons" id="footerTabs" style="display: none;">
+                    <button class="Course_button">
+                        <span class="Course_button_iin_text">Course</span>
+                    </button>
+
+                    <button class="Trailer_button">
+                        <span class="Trailer_button_iin_text">Trailer</span>
+                    </button>
+
+                    <button class="Details_button">
+                        <span class="Details_button_iin_text">Details</span>
+                    </button>
+
+                    <button class="Teacher_button">
+                        <span class="Teacher_button_iin_text">Teacher</span>
+                    </button>
+                </div>
+
+                <button class="Watch_Course_button" id="watchCourseBtn" onclick="toggleFooterUI(event)" style="display: none;">
+                    <span class="Watch_Course_button_iin_text">Watch Course</span>
+                </button>
+                
+                <button class="save_button">
+                    <img class="save_button_icon" src="./img/save.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

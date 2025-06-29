@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0"
+  },
+  "name": "data_awna_data_hadaglan_damjulan_node.js-deer",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "node --watch server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Batmanlaibn/data_awna_data_hadaglan_damjulan_node.js-deer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Batmanlaibn/data_awna_data_hadaglan_damjulan_node.js-deer/issues"
+  },
+  "homepage": "https://github.com/Batmanlaibn/data_awna_data_hadaglan_damjulan_node.js-deer#readme",
+  "description": ""
+}

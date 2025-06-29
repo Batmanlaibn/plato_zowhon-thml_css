@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="page1">
+            <div class="site_header">
+                <img src="./img/logo.png" class="logo" alt="Logo">
+                <a class="sign_in" href="/sign in/sign_In.html">
+                    <span class="sign_in_span">Sign In</span>
+                </a>
+            </div>
+            <div class="page1_main">
+                <div>
+                    <div class="page1_content_wrapper">
+                        <div id="image_container" class="page1_image_wrapper">
+                            <img id="background-image" class="page1_background_img" src="./img/home.png" alt="">
+                        </div>
+
+                        <div class="page1_quiz_main" id="quiz_wrapper" style="display: none;">
+                            <div class="page1_quiz">
+                                <div id="quiz_box">
+                                <!-- asuult end garna -->
+                                </div>
+                                <div class="choices">
+                                    <div id="score_box">
+                                        Оноо: <span id="score">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page1_buttons">
+                        <div class="page1_left_button">
+                            <button class="page1_Previos_Page" onclick="showPrevImage()">Previos Page</button>
+                        </div>
+                        <div class="page1_center_button">
+                            <button class="page1_icon1"><img class="page1_icon1_img" src="./img/gurwaljin.png" alt=""></button>
+                            <button class="page1_icon2"><img class="page1_icon2_img" src="./img/dugui.png" alt=""></button>
+                        </div>
+                        <div class="page1_right_button">
+                            <button id="continueBtn" class="page1_Continue" onclick="showNextImage()">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page2">
+            <div class="page2_header">
+                <div class="page2_header_titel">
+                    <p class="page2_header_titel_p">Course Content</p>
+                </div>
+                <div class="page2_header_main">
+                    <p class="page2_header_main_p">
+                        <span class="page2_header_main_p_line1">Explore Every</span><br>
+                        <span class="page2_header_main_p_line2">Course Chapter</span>
+                        <!-- <span class="page2_header_main_p_shar_tseg">.</span> -->
+                    </p>
+                </div>
+            </div>
+            <div class="pag2_main">
+                <div class="page2_main_header">
+                    <div class="page2_main_header_titles">
+                        <p class="page2_main_header_lesson_title">Lesson</p>
+                        <p class="page2_main_header_chapter_title">Chapter</p>
+                    </div>
+                </div>
+
+                <div class="page2_main_content">
+                    <!-- Row 1 -->
+                    <div class="page2_main_row">
+                        <div class="lesson_box"><span>Lesson 1</span></div>
+                        <div class="lesson_title">Introduction</div>
+                        <div class="chapter_count">2</div>
+                        <button class="view_more_button">View More</button>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="page2_main_row">
+                        <div class="lesson_box"><span>Lesson 2</span></div>
+                        <div class="lesson_title">UI Fundamentals, Figma Basics,<br>and Design Process</div>
+                        <div class="chapter_count">2</div>
+                        <button class="view_more_button">View More</button>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="page2_main_row">
+                        <div class="lesson_box"><span>Lesson 3</span></div>
+                        <div class="lesson_title">Let's Design!</div>
+                        <div class="chapter_count">2</div>
+                        <button class="view_more_button">View More</button>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="page2_main_row">
+                        <div class="lesson_box"><span>Lesson 4</span></div>
+                        <div class="lesson_title">Interactive Prototype, and<br>Professional Advice</div>
+                        <div class="chapter_count">2</div>
+                        <button class="view_more_button">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page3">
+
+        </div>
+        <div class="page4">
+
+        </div>
+        <div class="page5">
+
+        </div>
+        <div class="page6">
+            <div class="page6_footer">
+                <div class="page6_logo">
+                    <img src="./img/footer_icon.png" alt="Plato Logo">
+                    <p class="page6_tagline">Learn. Apply. Succeed.</p>
+                </div>
+                <div class="page6_songolt">
+                    <!-- page6_songolt BAIHGUI BAINA -->
+                    <div class="page6_nav_links">
+                        <a href="#">Courses</a>
+                        <a href="#">Community</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                    <div class="page6_social_links">
+                        <a href="#"><img class="facebook_icon" src="./img/facebook_icon.png" alt=""></a>
+                        <a href="#"><img class="instagram_icon" src="./img/instagram_icon.png" alt=""></a>
+                        <a href="#"><img class="linkedin_icon" src="./img/linkedIn_icon.png" alt=""></a>
+                        <a href="#"><img class="twitter_icon" src="./img/twitter_icon.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="baingiin_footer_buhelden">
+            <div class="baingiin_footer">
+
+                <button class="icon1" onclick="toggleFooterUI(event)">
+                    <img class="icon1_iin_icon" src="./img/garaa_tulsan_icon.png" alt="">
+                </button>
+
+                
+                <div class="footer_buttons_icons" id="footerTabs" style="display: none;">
+                    <button class="Course_button">
+                        <span class="Course_button_iin_text">Course</span>
+                    </button>
+
+                    <button class="Trailer_button">
+                        <span class="Trailer_button_iin_text">Trailer</span>
+                    </button>
+
+                    <button class="Details_button">
+                        <span class="Details_button_iin_text">Details</span>
+                    </button>
+
+                    <button class="Teacher_button">
+                        <span class="Teacher_button_iin_text">Teacher</span>
+                    </button>
+                </div>
+
+                <button class="Watch_Course_button" id="watchCourseBtn" onclick="toggleFooterUI(event)" style="display: none;">
+                    <span class="Watch_Course_button_iin_text">Watch Course</span>
+                </button>
+                
+                <button class="save_button">
+                    <img class="save_button_icon" src="./img/save.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="home2.js"></script>
+</body>
+</html>

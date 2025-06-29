@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main/iframe/iframe.css">
+    <link rel="stylesheet" href="sign_In.css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="nevtreh_sav">
+    <div class="helber_sav">
+        <div class="helber_container" id="formContainer">
+            <!-- Signup Form -->
+            <div class="helber_tal bvrtgel_helber">
+                <div class="helber_tolgoi">
+                    <h1 class="helber_garchig">Create Account</h1>
+                    <p class="helber_dedgarchig">Join us and start your journey</p>
+                </div>
+
+                <div class="niigmiin_newtrelt">
+                    <a href="#" class="niigmiin_btn">
+                        <svg class="niigmiin_icon" viewBox="0 0 24 24" fill="currentColor">...</svg>
+                        Google
+                    </a>
+                    <a href="#" class="niigmiin_btn">
+                        <svg class="niigmiin_icon" viewBox="0 0 24 24" fill="currentColor">...</svg>
+                        Facebook
+                    </a>
+                </div>
+
+                <div class="helber_zaag">
+                    <span>or sign up with email</span>
+                </div>
+
+                <div class="helber_mor">
+                    <div class="helber_buleg">
+                        <label class="helber_temtseg">First Name</label>
+                        <input type="text" class="helber_input" placeholder="John" required>
+                    </div>
+                    <div class="helber_buleg">
+                        <label class="helber_temtseg">Last Name</label>
+                        <input type="text" class="helber_input" placeholder="Doe" required>
+                    </div>
+                </div>
+
+                <div class="helber_buleg">
+                    <label class="helber_temtseg">Email Address</label>
+                    <input type="email" class="helber_input" placeholder="john@example.com" required>
+                </div>
+
+                <div class="helber_buleg nuuts_buleg">
+                    <label class="helber_temtseg">Password</label>
+                    <input type="password" class="helber_input" placeholder="Enter your password" required>
+                    <button type="button" class="nuuts_soligch">
+                        <svg class="nuuts_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="helber_songolt">
+                    <div class="checkbox_buleg">
+                        <input type="checkbox" class="helber_checkbox" id="terms" required>
+                        <label for="terms" class="helber_temtseg">I agree to the terms</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="ilgee_btn">Create Account</button>
+
+                <p class="nohtsol_text">
+                    By creating an account, you agree to our 
+                    <a href="#" class="nohtsol_link">Terms of Service</a> and 
+                    <a href="#" class="nohtsol_link">Privacy Policy</a>
+                </p>
+
+                <div class="helber_soliltsoo">
+                    <p class="soliltsoo_text">
+                        Already have an account? 
+                        <span class="soliltsoo_link" onclick="flipForm()">Sign in</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <div class="helber_tal nevtreh_helber">
+                <div class="helber_tolgoi">
+                    <h1 class="helber_garchig">Welcome Back</h1>
+                    <p class="helber_dedgarchig">Sign in to your account</p>
+                </div>
+
+                <div class="niigmiin_newtrelt">
+                    <a href="#" class="niigmiin_btn">
+                        <svg class="niigmiin_icon" viewBox="0 0 24 24" fill="currentColor">...</svg>
+                        Google
+                    </a>
+                    <a href="#" class="niigmiin_btn">
+                        <svg class="niigmiin_icon" viewBox="0 0 24 24" fill="currentColor">...</svg>
+                        Facebook
+                    </a>
+                </div>
+
+                <div class="helber_zaag">
+                    <span>or sign in with email</span>
+                </div>
+
+                <div class="helber_buleg">
+                    <label class="helber_temtseg">Email Address</label>
+                    <input type="email" class="helber_input" placeholder="john@example.com" required>
+                </div>
+
+                <div class="helber_buleg nuuts_buleg">
+                    <label class="helber_temtseg">Password</label>
+                    <input type="password" class="helber_input" placeholder="Enter your password" required>
+                    <button type="button" class="nuuts_soligch">
+                        <svg class="nuuts_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="helber_songolt">
+                    <div class="checkbox_buleg">
+                        <input type="checkbox" class="helber_checkbox" id="remember">
+                        <label for="remember" class="helber_temtseg">Remember me</label>
+                    </div>
+                    <a href="#" class="marтах_link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="ilgee_btn">Sign In</button>
+
+                <div class="helber_soliltsoo">
+                    <p class="soliltsoo_text">
+                        Don't have an account? 
+                        <span class="soliltsoo_link" onclick="flipForm()">Create one</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="sign_In.js"></script>
+</body>
+</html>

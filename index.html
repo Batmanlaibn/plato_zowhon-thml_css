@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <title>Нэгтгэсэн хуудсууд</title>
+  <style>
+    .page { display: none; }
+    .active { display: block; }
+    button { margin: 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>🧑‍💻 Миний систем</h1>
+  
+  <!-- 🧭 Navigation -->
+  <button onclick="showPage('home')">🏠 Нүүр</button>
+  <button onclick="showPage('sign_up')">📝 Бүртгүүлэх</button>
+  <button onclick="showPage('sign_in')">🔐 Нэвтрэх</button>
+
+  <!-- 🏠 Home page -->
+  <div id="home" class="page active">
+    <h2>Та юу хийхийг хүсэж байна вэ?</h2>
+    <p>Дээрх товчоодыг дарж бүртгүүлэх эсвэл нэвтэрч орно уу.</p>
+  </div>
+
+  <!-- 📝 Sign up -->
+  <div id="sign_up" class="page">
+    <h2>Бүртгүүлэх</h2>
+    <form id="signUpForm">
+        <label>First Name</label>
+        <input type="text" name="firstName" placeholder="Нэр" required /><br>
+        <label>Last Name</label>
+        <input type="text" name="lastName" placeholder="Овог" required /><br>
+        <label>Email Address</label>
+        <input type="text" name="email" placeholder="И-мэйл" required /><br>
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Нууц үг" required /><br>
+        
+        <button type="submit">Бүртгүүлэх</button>
+        
+        <p id="signupMessage" style="color:red;"></p>
+    </form>
+  </div>
+
+  <!-- 🔐 Sign in -->
+  <div id="sign_in" class="page">
+    <h2>Нэвтрэх</h2>
+    <form method="POST" action="/login">
+      <label>User Name (Last Name)</label>
+      <input type="text" name="UserName" placeholder="Овог" required />
+      <br>
+      <label>Password</label>
+      <input type="password" name="sign_password" placeholder="Нууц үг" required />
+      <br>
+      <button type="submit">Нэвтрэх</button>
+    </form>
+  </div>
+
+  <!-- 🌐 Script -->
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+
+        // 🧾 AJAX-р бүртгүүлэх
+        document.getElementById('signUpForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const form = e.target;
+            const formData = new FormData(form);
+            const data = new URLSearchParams(formData);
+
+            try {
+            const res = await fetch('/register', {
+                method: 'POST',
+                
+                body: data,
+            });
+
+            if (res.ok) {
+                showPage('home'); // 👈 Амжилттай бол Home руу шилжүүлнэ
+                alert("Амжилттай бүртгэгдлээ!");
+                form.reset();
+                
+            } else {
+                const error = await res.text();
+                document.getElementById('signupMessage').innerText = error;
+            }
+            } catch (err) {
+            document.getElementById('signupMessage').innerText = 'Алдаа гарлаа.';
+            }
+        });
+    </script>
+
+</body>
+</html>

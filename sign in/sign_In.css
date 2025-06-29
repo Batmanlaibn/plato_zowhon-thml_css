@@ -1,0 +1,232 @@
+/* nevtreh.css шинэчилсэн class нэршлүүдтэй */
+
+.nevtreh_sav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6366f1, #d946ef);
+    padding: 20px;
+}
+
+.helber_sav {
+    width: 420px;
+    perspective: 1000px;
+}
+
+.helber_container {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+.helber_container.flipped {
+    transform: rotateY(180deg);
+}
+
+.helber_tal {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    background: rgba(255,255,255,0.95);
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+.bvrtgel_helber {
+    transform: rotateY(0deg);
+}
+
+.nevtreh_helber {
+    transform: rotateY(180deg);
+}
+
+.helber_tolgoi {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.helber_garchig {
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.helber_dedgarchig {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.niigmiin_newtrelt {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.niigmiin_btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    background: rgba(255,255,255,0.8);
+    color: #475569;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.niigmiin_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.helber_zaag {
+    text-align: center;
+    margin: 16px 0;
+    position: relative;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.helber_mor {
+    display: flex;
+    gap: 12px;
+}
+
+.helber_buleg {
+    flex: 1;
+    margin-bottom: 16px;
+}
+
+.helber_temtseg {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.helber_input {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    background: rgba(255,255,255,0.8);
+    transition: 0.3s;
+}
+
+.helber_input:focus {
+    border-color: #6366f1;
+    background: white;
+    box-shadow: 0 8px 25px rgba(99,102,241,0.15);
+    transform: translateY(-2px);
+}
+
+.nuuts_buleg {
+    position: relative;
+}
+
+.nuuts_soligch {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nuuts_icon {
+    width: 20px;
+    height: 20px;
+    color: #a0aec0;
+}
+
+.helber_songolt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.checkbox_buleg {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.helber_checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: #667eea;
+}
+
+.marтах_link {
+    color: #667eea;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.ilgee_btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.ilgee_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(99,102,241,0.3);
+}
+
+.nohtsol_text {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.nohtsol_link {
+    color: #6366f1;
+    text-decoration: none;
+}
+
+.nohtsol_link:hover {
+    text-decoration: underline;
+}
+
+.helber_soliltsoo {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.soliltsoo_text {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.soliltsoo_link {
+    color: #6366f1;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.soliltsoo_link:hover {
+    color: #8b5cf6;
+}
