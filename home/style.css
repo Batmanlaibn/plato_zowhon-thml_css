@@ -1424,7 +1424,15 @@ body {
     #quiz_wrapper {
         left: calc(50% + 200px);
     }
+    .page1_main{
+        height: auto;
+        font-size: 9px;
+    }
 
+    .page1_background_img{
+        height: auto;
+        width: 300px;
+    }
 
   .page2_titel {
     width: 100%;
@@ -1432,13 +1440,13 @@ body {
   }
 
   .page2_titel_tom {
-    font-size: 56px;
+    font-size: 46px;
     width: 100%;
   }
 
   .page2_titel_jijig {
-    font-size: 14px;
-    width: 90%;
+    font-size: 12px;
+    width: 60%;
   }
 
   .page2_card {
@@ -1447,11 +1455,13 @@ body {
 
   .page2_card_main {
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 15px;
   }
 
   .page2_big_card {
-    width: 700px;
+    height: auto;
+    font-size: 12px;
+    width: 400px;
   }
 
   .page2_big_card_img {
