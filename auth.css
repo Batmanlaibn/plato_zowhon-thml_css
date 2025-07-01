@@ -1,0 +1,98 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nav button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.page {
+  display: none;
+  max-width: 400px;
+  margin: auto;
+}
+
+.page.active {
+  display: block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+}
+
+.password-field input {
+  flex: 1;
+}
+
+.password-field span {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#signupMessage {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dark-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  font-weight: bold;
+}

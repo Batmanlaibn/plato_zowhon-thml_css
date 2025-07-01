@@ -192,3 +192,41 @@ window.onload = () => {
   // ehelhed quiz haragdahgui
   quizWrapper.style.display = "none";
 };
+
+
+
+
+
+
+
+
+
+
+// Optional: Allow rating update by clicking stars
+const stars = document.querySelectorAll('.star');
+stars.forEach(star => {
+  star.addEventListener('click', () => {
+    const rating = parseInt(star.getAttribute('data-rating'));
+    stars.forEach(s => {
+      s.classList.remove('inactive');
+      if (parseInt(s.getAttribute('data-rating')) > rating) {
+        s.classList.add('inactive');
+      }
+    });
+  });
+});
+
+
+
+
+
+
+
+
+document.querySelectorAll('.page5_Score').forEach(scoreEl => {
+  const score = parseFloat(scoreEl.getAttribute('data-score')); 
+  const max = 5;
+  const percentage = (score / max) * 100;
+  const fill = scoreEl.querySelector('.page5_score_fill');
+  if (fill) fill.style.width = percentage + '%';
+});

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бүртгэл / Нэвтрэх</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <h1>newtreh burtguleh system</h1>
+
+  <label class="dark-toggle">
+    🌙 Dark Mode
+    <input type="checkbox" id="darkModeToggle">
+  </label>
+
+  <div class="nav">
+    <button><a href="home/index.html">nuur</a></button>
+    <button onclick="showPage('sign_up')">burtguuleh</button>
+    <button onclick="showPage('sign_in')">newtreh</button>
+  </div>
+
+  <div id="home" class="page active">
+    <h2>sain baina uu</h2>
+    <p>newterch yuma burtguulj oronshuu</p>
+  </div>
+
+  <div id="sign_up" class="page">
+    <h2>burtguleh</h2>
+    <form id="signUpForm">
+      <label>ner</label>
+      <input type="text" name="firstName" placeholder="Нэр" required />
+      <label>owog</label>
+      <input type="text" name="lastName" placeholder="Овог" required />
+      <label>email</label>
+      <input type="text" name="email" placeholder="И-мэйл" required />
+      <label>nuuts ug</label>
+      <div class="password-field">
+        <input type="password" name="password" id="regPassword" placeholder="Нууц үг" required />
+        <span onclick="togglePassword('regPassword')">👁</span>
+      </div>
+      <button type="submit">burtguleh</button>
+      <p id="signupMessage"></p>
+    </form>
+  </div>
+
+  <div id="sign_in" class="page">
+    <h2>newtreh</h2>
+    <form method="POST" action="/login">
+      <label>owog (UserName)</label>
+      <input type="text" name="UserName" required />
+      <label>nuuts ug</label>
+      <div class="password-field">
+        <input type="password" name="sign_password" id="signPassword" required />
+        <span onclick="togglePassword('signPassword')">👁</span>
+      </div>
+      <button type="submit">newtreh</button>
+    </form>
+  </div>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function togglePassword(id) {
+      const input = document.getElementById(id);
+      input.type = input.type === 'password' ? 'text' : 'password';
+    }
+
+    document.getElementById('darkModeToggle').addEventListener('change', function () {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    document.getElementById('signUpForm').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const formData = new FormData(form);
+      const data = new URLSearchParams(formData);
+
+      try {
+        const res = await fetch('/register', {
+          method: 'POST',
+          body: data
+        });
+
+        const msg = document.getElementById('signupMessage');
+        if (res.ok) {
+          localStorage.setItem('user', form.firstName.value);
+          msg.style.color = 'green';
+          msg.innerText = 'Амжилттай бүртгэгдлээ!';
+          form.reset();
+          showPage('home');
+        } else {
+          msg.style.color = 'red';
+          msg.innerText = await res.text();
+        }
+      } catch {
+        document.getElementById('signupMessage').innerText = 'aldaa garlaa';
+      }
+    });
+  </script>
+</body>
+</html>

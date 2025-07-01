@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Админ Хуудас</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    h1 { margin-bottom: 20px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    th {
+      background: #eee;
+    }
+    button {
+      padding: 5px 10px;
+      margin: 0 3px;
+      cursor: pointer;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>👑 Админ Хуудас</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ner</th>
+        <th>owog</th>
+        <th>email</th>
+        <th>uuts ug</th>
+        <th>uildel</th>
+      </tr>
+    </thead>
+    <tbody id="userTable"></tbody>
+  </table>
+
+  <script>
+    async function loadUsers() {
+      const res = await fetch('/users');
+      const users = await res.json();
+      const tbody = document.getElementById('userTable');
+      tbody.innerHTML = '';
+      users.forEach(user => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td><input type="text" value="${user.firstName}" /></td>
+          <td><input type="text" value="${user.lastName}" /></td>
+          <td><input type="email" value="${user.email}" /></td>
+          <td><input type="text" value="${user.password}" /></td>
+          <td>
+            <button onclick="updateUser(${user.id}, this.parentElement.parentElement)">✏️</button>
+            <button onclick="deleteUser(${user.id})">🗑️</button>
+          </td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    async function deleteUser(id) {
+      if (confirm('ustgah uu?')) {
+        await fetch(`/users/${id}`, { method: 'DELETE' });
+        loadUsers();
+      }
+    }
+
+    async function updateUser(id, row) {
+      const inputs = row.querySelectorAll('input');
+      const updated = {
+        firstName: inputs[0].value,
+        lastName: inputs[1].value,
+        email: inputs[2].value,
+        password: inputs[3].value
+      };
+      await fetch(`/users/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(updated)
+      });
+      alert('shichelj duussan');
+    }
+
+    loadUsers();
+  </script>
+</body>
+</html>
