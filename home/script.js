@@ -16,7 +16,37 @@ document.querySelectorAll('.page3_Score').forEach(scoreEl => {
   if (fill) fill.style.width = percentage + '%';
 });
 
+// Responsive quiz positioning
+function updateQuizPosition() {
+  const quizWrapper = document.getElementById("quiz_wrapper");
+  const imageContainer = document.getElementById("image_container");
+  
+  if (window.innerWidth <= 767) {
+    // Mobile: position quiz below the image
+    quizWrapper.style.position = "relative";
+    quizWrapper.style.left = "0";
+    quizWrapper.style.top = "0";
+    quizWrapper.style.transform = "none";
+    quizWrapper.style.marginTop = "20px";
+  } else if (window.innerWidth <= 1024) {
+    // Tablet: adjust position
+    quizWrapper.style.position = "absolute";
+    quizWrapper.style.left = "calc(50% + 200px)";
+    quizWrapper.style.top = "50%";
+    quizWrapper.style.transform = "translateY(-50%)";
+    quizWrapper.style.marginTop = "0";
+  } else {
+    // Desktop: original position
+    quizWrapper.style.position = "absolute";
+    quizWrapper.style.left = "calc(50% + 320px)";
+    quizWrapper.style.top = "50%";
+    quizWrapper.style.transform = "translateY(-50%)";
+    quizWrapper.style.marginTop = "0";
+  }
+}
 
+// Update quiz position on window resize
+window.addEventListener('resize', updateQuizPosition);
 
 document.querySelector('.page1_icon1').addEventListener('click', function () {
     // ene dutuu
@@ -62,8 +92,17 @@ function toggleFooterUI(event) {
   }
 }
 
-
-
+// Mobile touch handling for footer
+function handleMobileTouch() {
+  const footer = document.querySelector('.baingiin_footer');
+  
+  if (window.innerWidth <= 767) {
+    // Add touch event listeners for mobile
+    footer.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+    }, { passive: false });
+  }
+}
 
 // page1_content_wrapper iin uildel end baina
 const imageContainer = document.getElementById("image_container");
@@ -121,9 +160,11 @@ function showNextImage() {
     if (currentClass === "img_4" && currentQuestion === 0) {
       quizWrapper.style.display = "flex";
       loadQuestion(currentQuestion);
+      updateQuizPosition(); // Update position when quiz shows
     } else if (currentClass === "img_6" && currentQuestion === 1) {
       quizWrapper.style.display = "flex";
       loadQuestion(currentQuestion);
+      updateQuizPosition(); // Update position when quiz shows
     } else {
       quizWrapper.style.display = "none";
       continueBtn.disabled = false; // herew asult bish bol Continue ajilna
@@ -209,4 +250,13 @@ function showFinal() {
 window.onload = () => {
   // ehelhed quiz haragdahgui
   quizWrapper.style.display = "none";
+  
+  // Initialize responsive features
+  updateQuizPosition();
+  handleMobileTouch();
+  
+  // Add smooth scrolling for mobile
+  if (window.innerWidth <= 767) {
+    document.documentElement.style.scrollBehavior = 'smooth';
+  }
 };
