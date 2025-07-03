@@ -18,9 +18,15 @@
             </div>
             <div class="page1_main">
                 <div>
-                    <div class="page1_content_wrapper">
+                    <div class="page1_content_wrapper page4_animate">
                         <div id="image_container" class="page1_image_wrapper">
                             <img id="background-image" class="page1_background_img" src="./img/home.png" alt="">
+
+                            <!-- Clickable бүсүүд -->
+                            <div class="page1_click_zurag">
+                                <div class="click_left" onclick="showPrevImage()"></div>
+                                <div class="click_right" onclick="showNextImage()"></div>
+                            </div>
                         </div>
 
                         <div class="page1_quiz_main" id="quiz_wrapper" style="display: none;">
@@ -36,8 +42,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="page1_buttons">
+                    <div class="page1_buttons page4_animate">
                         <div class="page1_left_button">
                             <button class="page1_Previos_Page" onclick="showPrevImage()"><p class="page1_Previos_Page_p">Previos Page</p></button>
                         </div>
@@ -55,14 +60,14 @@
         <div class="page2">
             <div class="page2_header">
                 <div class="page2_header_main">
-                    <p class="page2_header_titel_p">Course Content</p>
-                    <P class="page2_header_main_p">
+                    <p class="page2_header_titel_p page4_animate">Course Content</p>
+                    <P class="page2_header_main_p page4_animate">
                         EXPLORE EVERY COURSE CHAPTER
                         <span class="page2_shar_tseg">.</span>
                     </P>
                 </div>
             </div>
-            <div class="pag2_main">
+            <div class="pag2_main page4_animate">
                 <div class="page2_main_header">
                     <div class="page2_main_header_titles">
                         <p class="page2_main_header_lesson_title">Lesson</p>
@@ -108,27 +113,27 @@
         <div class="page3">
             <div class="page3_main">  
                 <div class="page3_titel">
-                    <P class="page3_titel_tom">
+                    <P class="page3_titel_tom page4_animate">
                         LEARN FROM THE BEST<span class="page3_shar_tseg">.</span>
                     </P>
-                    <p class="page3_titel_jijig">
+                    <p class="page3_titel_jijig page4_animate">
                         LOREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL UT ALIQUIP EX EA COMMODO CONSEQUAT.
                     </p>
                 </div>
-                <div class="page3_card">
+                <div class="page3_card page4_animate">
                     <div class="page3_bichleg">
                         <img src="./img/image3.png" alt="">
                     </div>
                     <div class="page3_card_main">
                         <div class="page3_card_main_titel">
-                            <p class="page3_card_main_titel_deed">
+                            <p class="page3_card_main_titel_deed page4_animate">
                                 Innovative Web 
                                 Design in Figma: 
                                 A Step-by-Step 
                                 Process
                             </p>
                             <div class="page3_card_main_titel_footer">
-                                <div class="page3_card_main_titel_footer_score" id="starRating">
+                                <div class="page3_card_main_titel_footer_score page4_animate" id="starRating">
                                     <span class="star" data-rating="1">★</span>
                                     <span class="star" data-rating="2">★</span>
                                     <span class="star" data-rating="3">★</span>
@@ -136,15 +141,15 @@
                                     <span class="star inactive" data-rating="5">★</span>
                                     <p class="page3_card_main_titel_footer_Reviews">Reviews</p>
                                 </div>
-                                <p class="page3_card_main_titel_footer_dood">A course by Creative Director at TUX Creative Co, previously Locomotive.</p>
+                                <p class="page3_card_main_titel_footer_dood page4_animate">A course by Creative Director at TUX Creative Co, previously Locomotive.</p>
                             </div>
                         </div>
                         <div ontouchstart="">
                             <div class="page3_card_main_gol">
-                                <button class="page3_card_main_gol_button">Watch Course</button>
+                                <button class="page3_card_main_gol_button page4_animate">Watch Course</button>
                             </div>
                         </div>
-                        <div class="page3_card_main_footer">
+                        <div class="page3_card_main_footer page4_animate">
                             <div class="page3_card_main_footer_header">
                                 <p class="page3_card_main_footer_header_p">Registration Now Open.</p>
                             </div>
@@ -154,7 +159,7 @@
                                     <p class="page3_card_main_footer_main_weeks">10 weeks</p>
                                     <p class="page3_card_main_footer_main_dood_text">A course by Creative Director at TUX Creative Co, previously Locomotive.</p>
                                 </div>
-                                <div class="page3_card_main_footer_main_button_main">
+                                <div class="page3_card_main_footer_main_button_main page4_animate">
                                     <button class="page3_card_main_footer_main_button">Buy<img class="page3_card_main_footer_main_button_img" src="./img/Buy_icon.png" alt=""></button>
                                 </div>
                             </div>
@@ -189,13 +194,13 @@
         <div class="page5">
             <div>  
                 <div class="page5_titel">
-                    <p class="page5_titel_deed_titel">Related Courses</p>
-                    <P class="page5_titel_tom">
+                    <p class="page5_titel_deed_titel page4_animate">Related Courses</p>
+                    <P class="page5_titel_tom page4_animate">
                         Find more courses like this one
                         <span class="page5_shar_tseg">.</span>
                     </P>
                 </div>
-                <div class="page5_main">
+                <div class="page5_main page4_animate">
                     <div class="page5_card">
                         <div class="page5_card_main">
                             <div class="page5_img_main">
@@ -476,11 +481,10 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="page5_footer_wrapper_main">
                     <div class="page5_footer_wrapper">
-                        <div class="page5_footer">
+                        <div class="page5_footer page4_animate">
                             <p class="page5_footer_text">Currently we have more courses for you</p>
                             <a href="#" class="page5_footer_link">View All Master Classes</a>
                         </div>
@@ -489,9 +493,9 @@
             </div>
         </div>
         <div class="page6">
-            <div class="page6_footer">
+            <div class="page6_footer page4_animate">
                 <div class="page6_logo">
-                    <img src="./img/footer_icon.png" alt="Plato Logo">
+                    <img class="page6_logo_img" src="./img/footer_icon.png" alt="Plato Logo">
                     <p class="page6_tagline">Learn. Apply. Succeed.</p>
                 </div>
                 <div class="page6_songolt">

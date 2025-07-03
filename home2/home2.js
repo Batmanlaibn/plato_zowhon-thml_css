@@ -285,17 +285,27 @@ window.addEventListener('resize', preventHorizontalScroll);
 
 
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const target = entry.target;
+
     if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      observer.unobserve(entry.target); // нэг л удаа анимэйшн хийлгэнэ
+      target.classList.add('show');
+    } else {
+      target.classList.remove('show'); // Доороос дээш гүйлгэхэд animate дахин ажиллах боломж
     }
   });
 }, {
-  threshold: 0.2
+  threshold: 0.2, // 20% харагдах үед trigger
 });
 
-document.querySelectorAll('.page4_animate').forEach(el => {
-  observer.observe(el);
-});
+// Бүх .page4_animate элементүүд дээр observer хийх
+document.querySelectorAll('.page4_animate').forEach((el) => observer.observe(el));
+
+
+
+
+
+
+
+
