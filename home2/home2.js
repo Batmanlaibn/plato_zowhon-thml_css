@@ -292,19 +292,28 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       target.classList.add('show');
     } else {
-      target.classList.remove('show'); // Доороос дээш гүйлгэхэд animate дахин ажиллах боломж
+      target.classList.remove('show'); // scroldhod animate dahin ajillah bolomj
     }
   });
 }, {
-  threshold: 0.2, // 20% харагдах үед trigger
+  threshold: 0.2, // 20% haragdah uyd trigger
 });
 
-// Бүх .page4_animate элементүүд дээр observer хийх
+// buh .page4_animate elimentuud deer observer hiih
 document.querySelectorAll('.page4_animate').forEach((el) => observer.observe(el));
 
 
 
 
+
+
+window.onload = () => {
+    // Existing code...
+    const adminLink = document.querySelector('.admin_link');
+    if (localStorage.getItem('isAdminLoggedIn')) {
+        adminLink.style.display = 'inline-flex';
+    }
+};
 
 
 

@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f8f8;
+}
+
+.admin-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.logo {
+    width: 75px;
+    height: 30px;
+}
+
+.sign-out {
+    padding: 8px 16px;
+    background-color: #F6CA17;
+    color: #1A1A1A;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sign-out:hover {
+    background-color: #fcd948;
+}
+
+.admin-content {
+    padding: 20px;
+}
+
+.admin-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.admin-quiz-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#quiz-form label {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#quiz-form textarea,
+#quiz-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#quiz-form button {
+    padding: 10px 20px;
+    background-color: #F6CA17;
+    color: #1A1A1A;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#quiz-form button:hover {
+    background-color: #fcd948;
+}
+
+.quiz-list {
+    margin-top: 20px;
+}
+
+.quiz-list h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#question-list {
+    list-style: none;
+    padding: 0;
+}
+
+#question-list li {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#question-list button {
+    padding: 5px 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#question-list button:hover {
+    background-color: #cc0000;
+}
+
+@media (max-width: 768px) {
+    .admin-main {
+        padding: 10px;
+    }
+
+    .admin-content h2 {
+        font-size: 24px;
+    }
+
+    #quiz-form textarea,
+    #quiz-form input {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+.card_list {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card_list h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .card_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card_item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .card_item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .card_item h4 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .card_item p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card_actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .card_actions button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .edit_btn {
+      background-color: #17c9f6;
+      color: white;
+    }
+
+    .edit_btn:hover {
+      background-color: #0ea8d1;
+    }
+
+    .delete_btn {
+      background-color: #ff4d4d;
+      color: white;
+    }
+
+    .delete_btn:hover {
+      background-color: #cc0000;
+    }
+
+    @media (max-width: 768px) {
+      .card_grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    
+#card-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#card-form label {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#card-form input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#card-form button {
+    padding: 10px 20px;
+    background-color: #F6CA17;
+    color: #1A1A1A;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#card-form button:hover {
+    background-color: #fcd948;
+}
+
+@media (max-width: 768px) {
+    #card-form input {
+        max-width: 100%;
+    }
+}

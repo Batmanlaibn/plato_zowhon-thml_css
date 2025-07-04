@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="admin-main">
+        <div class="admin-header">
+            <img src="./img/logo.png" class="logo" alt="Logo">
+            <a class="sign-out" href="/sign in/sign_In.html">Sign Out</a>
+        </div>
+        <!-- Quiz Management Section -->
+        <div class="admin-content">
+            <h2>Manage Quiz Questions</h2>
+            <div class="admin-quiz-section">
+                <form id="quiz-form">
+                    <label for="question-text">Question Text:</label>
+                    <textarea id="question-text" placeholder="Enter question text with ____ for blank" required></textarea>
+                    
+                    <label for="options">Options (comma-separated):</label>
+                    <input type="text" id="options" placeholder="e.g., apple, banana, correct, hello" required>
+                    
+                    <label for="answer">Correct Answer:</label>
+                    <input type="text" id="answer" placeholder="e.g., correct" required>
+                    
+                    <button type="submit">Add Question</button>
+                </form>
+                <div class="quiz-list">
+                    <h3>Existing Questions</h3>
+                    <ul id="question-list"></ul>
+                </div>
+            </div>
+        </div>
+        <!-- Card Management Section -->
+        <div class="admin-content">
+            <h2>Manage Course Cards</h2>
+            <div class="admin-quiz-section">
+                <form id="card-form">
+                    <label for="card-title">Course Title:</label>
+                    <input type="text" id="card-title" placeholder="e.g., Design Systems for Websites Using Figma" required>
+                    
+                    <label for="card-image">Image URL:</label>
+                    <input type="text" id="card-image" placeholder="e.g., ./img/image5.png" required>
+                    
+                    <label for="card-price">Price (USD):</label>
+                    <input type="number" id="card-price" placeholder="e.g., 99" required>
+                    
+                    <label for="card-score">Score (out of 5):</label>
+                    <input type="number" id="card-score" step="0.1" min="0" max="5" placeholder="e.g., 3.7" required>
+                    
+                    <label for="card-instructor">Instructor:</label>
+                    <input type="text" id="card-instructor" placeholder="e.g., IDERBAT" required>
+                    
+                    <button type="submit">Add Card</button>
+                </form>
+                <div class="card-list">
+                    <h3>Existing Cards</h3>
+                    <ul id="card-list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

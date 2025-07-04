@@ -260,3 +260,29 @@ window.onload = () => {
     document.documentElement.style.scrollBehavior = 'smooth';
   }
 };
+
+
+
+
+
+
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    const target = entry.target;
+
+    if (entry.isIntersecting) {
+      target.classList.add('show');
+    } else {
+      target.classList.remove('show'); // scroldhod animate dahin ajillah bolomj
+    }
+  });
+}, {
+  threshold: 0.2, // 20% haragdah uyd trigger
+});
+
+// buh .page4_animate elimentuud deer observer hiih
+document.querySelectorAll('.animate').forEach((el) => observer.observe(el));
+
+
